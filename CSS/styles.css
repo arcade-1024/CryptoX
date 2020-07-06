@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/* Global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	font-family: "Poppins", sans-serif;
+}
+#main {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.584);
+	color: #fff;
+	display: none;
+	z-index: 5;
+	transition: all 0.3 ease-in-out;
+}
+#pop-up {
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(90deg, #9d35f8, rgb(75, 0, 224));
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#pop-up .text {
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	border: 0;
+}
+.horizontal-line {
+	border-style: none;
+	border-top: dotted;
+	/* border-color: #ffc107; */
+	border-bottom: none;
+	border-width: 7px;
+	width: 15%;
+	margin: auto;
+}
+/* Home section */
+#sec-one {
+	background-image: url("../img/Asset 2.png");
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+.navbar-brand {
+	font-size: 1.5rem;
+	color: #fff !important;
+}
+.navbar-brand span {
+	font-family: "Dancing Script", cursive;
+	font-size: 1.7rem;
+}
+.navbar-collapse {
+	background-color: #fff;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
+	padding: 5px 15px;
+	z-index: 5;
+}
+.nav-link {
+	margin-right: 20px;
+	font-size: 0.9rem;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+}
+.nav-link:hover {
+	color: #ffc107 !important;
+}
+.nav-link::before {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	border-radius: 5px;
+	bottom: 0;
+	left: -1%;
+	background-color: #ffc107;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+.nav-link:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+.sec-one-title {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	z-index: 1;
+}
+.btn {
+	outline: none;
+	/* border: none; */
+	cursor: pointer;
+	font-family: "Source Code Pro", monospace;
+}
+.round-corner {
+	border-radius: 50px !important;
+}
+.grad-btn {
+	background: linear-gradient(90deg, #f7971e, #f5af19);
+	color: #fff;
+	letter-spacing: 1px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+	transition: all 0.3s ease;
+}
+.grad-btn:hover {
+	box-shadow: none;
+	background: linear-gradient(180deg, #f7971e, #f5af19);
+}
+.sec-one-title h4 {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.sec-one-title h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	font-family: "Ubuntu", sans-serif;
+}
+.sec-one-title p {
+	font-size: 0.9rem;
+	font-weight: 200;
+}
+
+/* Top features section */
+#sec-two .container-fluid {
+	padding: 2% 15%;
+}
+#sec-two .container-fluid h4 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+#sec-two .container-fluid p {
+	font-weight: 100;
+}
+/* Download Now section */
+#sec-three {
+	background: linear-gradient(90deg, #9d35f8, rgb(75, 0, 224));
+	background-size: 200% 100%;
+	animation: gradient 1s linear infinite;
+	animation-direction: alternate;
+	margin: 3% 0;
+	padding: 5% 5%;
+}
+#sec-three .container-fluid {
+	padding: 0 15%;
+}
+#sec-three .text {
+	padding-top: 65px;
+}
+#sec-three .text h1 {
+	font-weight: 600;
+}
+#sec-three .text h1 span {
+	font-family: "Dancing Script", cursive;
+}
+.img-locate {
+	width: 300px;
+	height: 300px;
+}
+.button {
+	transition: all 0.3s ease;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+.button:hover {
+	box-shadow: none;
+}
+.apple {
+	background: linear-gradient(90deg, #f7971e, #f5af19);
+}
+.apple:hover {
+	background: linear-gradient(270deg, #fc8f0b, #f5af19);
+}
+
+#sec-four {
+	padding: 5% 10%;
+}
+
+/* Testimonial Section */
+#sec-five {
+	background: linear-gradient(-45deg, #4a00e0, #8e2de2);
+	color: #fff;
+	padding: 5% 15%;
+	text-align: center;
+}
+.col-feature {
+	padding: 5% 0;
+}
+
+.emp {
+	font-family: "Dancing Script", cursive;
+	font-weight: 600;
+}
+.author {
+	width: 100%;
+	font-family: "Ubuntu";
+	text-align: right;
+	margin-right: 10rem;
+	margin-top: 20px;
+	font-size: 0.9rem;
+}
+
+.quote {
+	text-align: center;
+	font-size: 1.1rem;
+}
+.image-avatar {
+	width: 40%;
+	transition: 0.3s ease;
+	padding-bottom: 30px;
+}
+.image-avatar:hover {
+	width: 45%;
+}
+
+.img-press-logo {
+	width: 45%;
+	margin: 20px 20px 50px;
+}
+#sec-six {
+	padding: 10% 15%;
+}
+.heading {
+	font-size: 1.5rem;
+	padding-bottom: 2%;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+}
+.para {
+	font-size: 0.9rem;
+}
+#sec-six .card {
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.418);
+	transition: all 0.3s ease;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#sec-six .card:hover {
+	box-shadow: none;
+	transform: scale(1.2);
+}
+#sec-six .card .btn {
+	background: linear-gradient(90deg, #f7971e, #f5af19);
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.267);
+	color: #fff;
+	transition: all 0.3s ease;
+}
+#sec-six .card .btn:hover {
+	background: linear-gradient(270deg, #fc8f0b, #f5af19);
+	box-shadow: none;
+}
+#sec-six .card .card-title {
+	font-weight: 600;
+	font-family: "Ubuntu";
+}
+#sec-six .card .card-text {
+	color: #808080;
+}
+.card ul li {
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+}
+.card .row {
+	justify-content: center;
+}
+.card .row h4 span {
+	font-weight: 700;
+}
+
+#sec-seven {
+	background: linear-gradient(45deg, #4a00e0, #8e2de2);
+	background-size: 200% 100%;
+	animation: gradient 2s linear infinite;
+	animation-direction: alternate;
+	padding: 2% 10%;
+}
+
+#sec-seven .container-fluid .row {
+	justify-content: space-evenly;
+}
+#sec-seven .card {
+	transition: all 0.3s ease;
+}
+#sec-seven .card:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+	transform: scale(1.1);
+}
+#sec-seven .card .card-title {
+	font-family: "Montserrat", sans-serif;
+}
+.slogan {
+	font-size: 1.5rem;
+}
+#sec-eight {
+	padding: 7% 14%;
+}
+#sec-eight .container-fluid .row button {
+	font-size: 1.5rem;
+	padding: 0.5em 1em;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+	transition: 0.3s ease-in-out;
+}
+#sec-eight .container-fluid .row button:hover {
+	box-shadow: none;
+	transform: scaleX(1.1);
+}
+#sec-eight .container-fluid .row .buy {
+	background: linear-gradient(90deg, #f7971e, #f5af19);
+	color: #fff;
+}
+#sec-eight .container-fluid .row .buy:hover {
+	background: linear-gradient(270deg, #fc8f0b, #f5af19);
+}
+#footer {
+	background-image: url("../img/Asset 3-bottom.png");
+	background-size: cover;
+	height: 95vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 15% 15%;
+	color: #fff;
+}
+
+#footer h4 {
+	font-family: "Ubuntu", sans-serif;
+}
+#footer h5 {
+	font-family: "Ubuntu", sans-serif;
+}
+
+.imp-links {
+	display: flex;
+	flex-direction: column;
+}
+.imp-links a {
+	padding-left: 20px;
+}
+
+.address-div p {
+	text-decoration: underline;
+	padding-bottom: 2px;
+}
+@media (min-width: 1024px) {
+	#sec-one {
+		background-image: url("../img/Asset 1.png");
+		background-size: cover;
+		height: 100vh;
+	}
+	header {
+		padding: 2% 15%;
+	}
+
+	.navbar-collapse {
+		background-color: transparent;
+		box-shadow: none;
+	}
+	.navbar-nav {
+		padding-left: 20px;
+	}
+	.nav-link {
+		font-size: 1.1rem;
+		color: #fff !important;
+	}
+	.sec-one-title {
+		position: absolute;
+		left: 15%;
+		top: 30%;
+	}
+	.sec-one-title h4 {
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+	.sec-one-title h1 {
+		font-size: 2.5rem;
+	}
+	.sec-one-title p {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+	#sec-two .container-fluid h4 {
+		font-size: 1.75rem;
+	}
+	.img-locate {
+		width: 450px;
+		height: 450px;
+	}
+	.quote {
+		font-size: 2rem;
+	}
+	.author {
+		font-size: 1.2rem;
+	}
+	.image-avatar {
+		width: 20%;
+		transition: 0.3s ease;
+	}
+	.image-avatar:hover {
+		width: 22%;
+	}
+	.img-press-logo {
+		width: 55%;
+	}
+	#sec-six {
+		padding: 5% 15%;
+	}
+	.slogan {
+		font-size: 2.5rem;
+	}
+	.heading {
+		font-size: 2.5rem;
+	}
+	#footer {
+		height: 50vh;
+		padding: 10% 15%;
+		flex-direction: row;
+		background-image: url("../img/Asset 2-bottom.png");
+	}
+}
+
+/* keyframes animataion background */
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
