@@ -1,2 +1,2 @@
 # CryptoX
-CryptoX which is a cryptocurrency wallet
+CryptoX is a cryptocurrency wallet.
