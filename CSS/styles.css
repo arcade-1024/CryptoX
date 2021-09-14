@@ -16,6 +16,9 @@ a {
 a:hover {
 	text-decoration: none;
 }
+body {
+	font-family: "Montserrat", sans-serif;
+}
 p {
 	font-family: "Poppins", sans-serif;
 }
@@ -334,11 +337,12 @@ p {
 	box-shadow: none;
 	transform: scaleX(1.1);
 }
-#sec-eight .container-fluid .row .buy {
+#sec-eight .container-fluid  .buy-button {
 	background: linear-gradient(90deg, #f7971e, #f5af19);
 	color: #fff;
+	transition: all 0.5s;
 }
-#sec-eight .container-fluid .row .buy:hover {
+#sec-eight .container-fluid.buy-button:hover {
 	background: linear-gradient(270deg, #fc8f0b, #f5af19);
 }
 #footer {
@@ -436,7 +440,7 @@ p {
 		padding: 5% 15%;
 	}
 	.slogan {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.heading {
 		font-size: 2.5rem;
